@@ -49,25 +49,28 @@
                     { "title": "event3", "date": "2014/12/27" },
                     { "title": "event4", "date": "2014/12/30" }];
 
-      // dizinin ilk elemanının gününü aldım.
-        var day= data[0].date.split('/')[2]; 
-        $("div:contains("+day+")").css("color", "red");
-        $(".month div:contains("+day+")").append("<div class='event'> " + data[0].title + " " + data[0].date + "</div>");
+        // dizinin ilk elemanının gününü aldım.
+        for (var i in data) {
+            var day = data[i].date.split('/')[2];
+            $("div:contains(" + day + ")").css("color", "red");
+            $(".month div:contains(" + day + ")").append("<div class='event'> " + data[i].title + " " + data[i].date + "</div>");
+        }
+       
 
 
-        day = data[1].date.substring(8, 10)
-        $("div:contains(" + day + ")").css("color", "red");
-        $(".month div:contains(" + day + ")").append("<div class='event'> " + data[1].title + " " + data[1].date + "</div>");
+        //day = data[1].date.substring(8, 10)
+        //$("div:contains(" + day + ")").css("color", "red");
+        //$(".month div:contains(" + day + ")").append("<div class='event'> " + data[1].title + " " + data[1].date + "</div>");
 
 
-        day = data[2].date.substring(8, 10)
-        $("div:contains(" + day + ")").css("color", "red");
-        $(".month div:contains(" + day + ")").append("<div class='event'> " + data[2].title + " " + data[2].date + "</div>");
+        //day = data[2].date.substring(8, 10)
+        //$("div:contains(" + day + ")").css("color", "red");
+        //$(".month div:contains(" + day + ")").append("<div class='event'> " + data[2].title + " " + data[2].date + "</div>");
 
 
-        day = data[3].date.substring(8, 10)
-        $("div:contains(" + day + ")").css("color", "red");
-        $(".month div:contains("+day+")").append("<div class='event'> " + data[3].title + " " + data[3].date + "</div>");
+        //day = data[3].date.substring(8, 10)
+        //$("div:contains(" + day + ")").css("color", "red");
+        //$(".month div:contains("+day+")").append("<div class='event'> " + data[3].title + " " + data[3].date + "</div>");
 
 
     </script>
