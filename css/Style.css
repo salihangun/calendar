@@ -1,0 +1,11 @@
+﻿*{padding:0;margin:0;}
+.calendar{width:954px;height:903px; margin:0 auto; background:url(/img/calendar.png);margin-top:35PX; }
+.month{width: 903px;height: 582px;float: left;margin-top: 290px;margin-left: 25px;}
+.day{width: 126px;height: 106px;float: left; margin-left:2.8px; margin-top:2.8px; text-align:center; font-size:23px; font-weight:bold;color:#484848; line-height:60px;cursor:pointer;position:relative}
+.day:hover{background:rgba(255, 0, 0, 0.67); color:#fff;}
+.event{width:100%; height:40px;background:#484848;color:#fff; font-size:14px; position:absolute; z-index:2;line-height:40px;margin-top:6px;}
+
+
+
+
+
